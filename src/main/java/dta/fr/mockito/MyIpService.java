@@ -1,5 +1,6 @@
 package dta.fr.mockito;
 
+import java.io.IOException;
 import java.util.Map;
 
 import com.google.gson.Gson;
@@ -12,7 +13,7 @@ public class MyIpService {
 	}
 	
 
-	public String getMyIp() {
+	public String getMyIp() throws IOException {
 		Gson gson = new Gson();
 		String jsonIp = httpDataService.getJsonIp();
 		Map<String, String> map = gson.<Map<String, String>>fromJson(jsonIp, Map.class);

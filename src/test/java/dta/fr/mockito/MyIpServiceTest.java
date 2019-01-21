@@ -1,5 +1,7 @@
 package dta.fr.mockito;
 
+import java.io.IOException;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -10,7 +12,7 @@ import dta.fr.mockito.MyIpService;
 
 public class MyIpServiceTest {
 	@Test
-	public void test() {
+	public void test() throws IOException {
 		HttpDataService hds = Mockito.mock(HttpDataService.class);
 		
 		Mockito.when(hds.getJsonIp()).thenReturn("{\"ip\":\"192.168.1.1\",\"about\":\"/about\",\"Pro!\":\"http://getjsonip.com\",\"reject-fascism\":\"Support immigrants\"}");
