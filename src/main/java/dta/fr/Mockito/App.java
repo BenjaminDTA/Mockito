@@ -1,12 +1,14 @@
 package dta.fr.Mockito;
 
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 
 public class App 
 {
-    public static void main( String[] args )
-    {
+	private static final Logger Logger = LoggerFactory.getLogger(App.class);
+    public static void main( String[] args ) {
+    	
     	HttpDataService hds = new HttpDataService();
-    	MyIpService ip = new MyIpService(hds);
-    	System.out.println(hds.getJsonIp());
+    	Logger.info((hds.getJsonIp()));
     }
 }
