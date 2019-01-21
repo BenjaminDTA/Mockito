@@ -12,7 +12,7 @@ public class HttpDataService {
 		try {
 			return Request.Get(url).execute().returnContent().toString();
 		} catch (IOException e) {
-			throw new RuntimeException(e);
+			throw new IllegalArgumentException(e);
 		}
 	}
 	
