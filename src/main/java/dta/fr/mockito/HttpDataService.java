@@ -1,4 +1,4 @@
-package dta.fr.Mockito;
+package dta.fr.mockito;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ public class HttpDataService {
 	
 	public static String url = "http://jsonip.com";
 
-	public String getJsonIp() {
+	public String getJsonIp() throws RuntimeException{
 		try {
 			return Request.Get(url).execute().returnContent().toString();
 		} catch (IOException e) {

@@ -1,4 +1,4 @@
-package dta.fr.Mockito;
+package dta.fr.mockito;
 
 import java.util.Map;
 

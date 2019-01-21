@@ -1,8 +1,11 @@
-package dta.fr.Mockito;
+package dta.fr.mockito;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
+
+import dta.fr.mockito.HttpDataService;
+import dta.fr.mockito.MyIpService;
 
 
 public class MyIpServiceTest {

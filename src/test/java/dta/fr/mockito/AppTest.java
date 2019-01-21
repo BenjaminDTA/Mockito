@@ -1,4 +1,4 @@
-package dta.fr.Mockito;
+package dta.fr.mockito;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

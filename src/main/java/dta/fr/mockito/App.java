@@ -1,4 +1,4 @@
-package dta.fr.Mockito;
+package dta.fr.mockito;
 
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
